@@ -1,0 +1,42 @@
+.HomePage {
+    text-align: center;
+  }
+  
+  .HomePage-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40px;
+  }
+  
+  .HomePage-header {
+    background-color: #2794a0;
+    height: 8n0px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .HomePage-title {
+    font-size: 1.5em;
+  }
+  
+  .HomePage-intro {
+    font-size: large;
+  }
+  
+  .MainContainer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    margin: 2em;
+  }
+  
+  .ShoppingListContainer {
+    max-width: 40em;
+    flex-grow:1;
+  }
+  
+  @keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  

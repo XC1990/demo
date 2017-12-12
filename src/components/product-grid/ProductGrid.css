@@ -1,0 +1,21 @@
+.ProductGrid {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+  }
+  
+  .ProductGridColumn {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    margin: 1em;
+    flex-wrap: wrap;
+  }
+
+  .ColumnHead{
+    color: #2794a0;
+  }

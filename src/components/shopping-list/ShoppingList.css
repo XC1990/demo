@@ -1,0 +1,28 @@
+
+.ShoppingList h1 {
+  text-align: center;
+  color:#2794a0;
+  padding:0.5em;
+}
+.TableRow   {
+    fill:#2794a0;
+    color:#2794a0;
+}
+
+.TableBody span{
+    color:#2794a0;
+}
+.CardAction strong{
+    color:#2794a0;
+    
+}
+.Card{
+    margin-top: 4.2em;
+    padding-bottom: 1em;
+    min-width: 20em;
+}
+
+.CardTitle, .NoProduct{
+    color: #2794a0;
+}
+

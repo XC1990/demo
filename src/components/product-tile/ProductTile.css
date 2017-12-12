@@ -1,0 +1,53 @@
+  .ProductTile {
+    max-width: 16em;
+    min-width: 16em;
+    margin-bottom: 2em; 
+  }
+
+  .ProductTile .ProductImage {
+    max-width: 8em;
+    margin:0.5em;
+
+  }
+  .ProductName{
+    margin:0.20em;
+  }
+
+  .ProductPrice {
+    padding: 0.8em;
+    padding-right: 0em;
+    color:#2794a0;
+    font-weight: 900;
+    margin:0.20em;
+    float:left;
+  }
+  .ProductDetail{
+    margin-top: 2em;
+    margin-left:1em;
+    margin-right:1em;
+  }
+  .Paper, .ProductImage{
+    padding:0.8em;
+  }
+  .Checkbox{
+    padding-top:0.85em;
+    margin-left: 2em;
+    margin-right: 0em;
+  }
+  .ProductTile .ProductImageLarge{
+    max-width: 16em;
+    margin:0.5em;
+    align-self: center;
+  }
+  .CenterImage {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ProductLink{
+    margin-left:1em;
+  }
+ 
+
+
+  
