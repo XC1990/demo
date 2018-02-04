@@ -4,14 +4,27 @@ import productActions from './actions/products'
 import RaisedButton from 'material-ui/RaisedButton'
 import ProductGrid from './components/product-grid/ProductGrid'
 import ShoppingList from './components/shopping-list/ShoppingList'
-import HomePage from './container/home-page'
-import AboutPage from './container/about'
+// import HomePage from './container/home-page'
+// import AboutPage from './container/about'
 import AppBar from 'material-ui/AppBar';
 import FlatButton from 'material-ui/FlatButton';
 import { Tabs, Tab } from 'material-ui/Tabs';
 import './App.css';
 import { connect } from 'react-redux';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Loadable from 'react-loadable';
+
+const Loading = () => <div>Loading...</div>;
+
+const Home = Loadable({
+  loader: () => import('./container/home-page'),
+  loading: Loading,
+});
+
+const About = Loadable({
+  loader: () => import('./container/about'),
+  loading: Loading,
+});
 
 class App extends Component {
 
@@ -19,6 +32,7 @@ class App extends Component {
     super(props);
 
   }
+  
   render() {
     return (
       <Router>
@@ -32,8 +46,8 @@ class App extends Component {
             </Tabs>}
           />
           <div className="MainContentController">
-            <Route exact path="/" component={HomePage} />
-            <Route exact path='/about' component={AboutPage} />
+            <Route exact path="/" component={Home} />
+            <Route exact path='/about' component={About} />
           </div>
         </div>
       </Router>

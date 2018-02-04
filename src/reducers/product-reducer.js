@@ -2,7 +2,9 @@ import types from '../actions/types'
 
 
 const initialState = {
-    products: []
+    products: [],
+    error:null,
+    loading:false
 }
 const productReducer = (state, action) => {
     if (typeof state === 'undefined') {

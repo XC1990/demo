@@ -6,7 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import IconButton from 'material-ui/IconButton';
 import { Provider } from 'react-redux';
-import  store  from './store/index';
+import  configureStore  from './store/index';
 
 const Wrapper = () => {
     return (<MuiThemeProvider>
@@ -17,5 +17,17 @@ const Wrapper = () => {
     )
 };
 
-ReactDOM.render(<Wrapper />, document.getElementById('root'));
+
+const store = configureStore()
+
+ReactDOM.render(<Wrapper/>, document.getElementById('root'));
+
+if (module.hot) {
+    module.hot.accept('./App', () => {
+        ReactDOM.render(<Wrapper/>, document.getElementById('root'))
+    })
+}
+
 registerServiceWorker();
+
+
